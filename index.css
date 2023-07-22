@@ -1,0 +1,950 @@
+body {
+    font-family: 'Quicksand', sans-serif;
+    padding: 0%;
+    margin: 0%;
+}
+
+h1 {
+    margin: 0%;
+}
+
+.inlineBlock {
+    display: inline-block;
+    vertical-align: top;
+
+}
+
+a {
+    color: black;
+    text-decoration: none;
+
+}
+
+a:hover {
+    color: #FF735C;
+
+}
+
+.inuse {
+    color: #FF735C;
+    text-decoration: underline;
+
+}
+
+
+.flexEnd {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: end;
+    text-align: center;
+}
+
+
+.navbarList {
+    width: 100%;
+    text-align: right;
+    margin-bottom: 0;
+    margin-top: 0;
+    font-size: 1.2rem;
+}
+
+.w40 {
+    width: 40%;
+}
+
+
+.navigation {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 10vh;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: white;
+
+}
+
+.navigation li {
+    padding-left: 5%;
+    padding-right: 5%;
+
+}
+
+
+.coralBox {
+    background-color: #FF735C;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 58%;
+}
+
+
+.logoContainer {
+    position: relative;
+    top: 47vh;
+    width: 100%;
+    text-align: right;
+}
+
+
+.logoContainer h1 {
+    font-family: 'Patua One', cursive;
+    color: white;
+    font-size: 8rem;
+    margin: 0%;
+    z-index: 2;
+    font-weight: 500;
+
+}
+
+.logoK {
+    letter-spacing: 2px;
+    line-height: 30%;
+}
+
+
+.homepageSection {
+    height: 90vh;
+    width: 100%
+}
+
+.mainSection {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: [first] 58% [line2] 42% [end];
+    grid-template-rows: [row1-start] 1fr [row1-end] 1fr [third-line] 1fr;
+    grid-template-areas: "box quote"
+        "box text"
+        "box button";
+
+}
+
+.quote {
+    grid-area: quote;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10%;
+    transition: transform 1s;
+}
+
+.moveBase {
+    transition: transform 1s;
+}
+
+.button {
+    grid-area: button;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.quoteMainText {
+    font-size: 2rem;
+    padding-left: 20%;
+    padding-right: 20%;
+    text-align: center;
+    font-weight: lighter;
+    margin: 0;
+
+}
+
+
+.quoteSpeechMarks {
+    color: #FF735C;
+    display: inline-block;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    font-size: 3rem;
+    line-height: 10%;
+}
+
+.author {
+    font-size: 0.75rem;
+    text-align: center;
+    vertical-align: middle;
+    display: block;
+    font-style: italic;
+}
+
+
+.aboutMe {
+    grid-area: text;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-weight: lighter;
+}
+
+.aboutMeText {
+    font-size: 1.75rem;
+    text-align: center;
+    vertical-align: middle;
+    padding-left: 15%;
+    padding-right: 15%;
+    font-weight: lighter;
+    margin: 0;
+}
+
+
+.buttonStyle {
+    border-radius: 30px;
+    border-color: #FF735C;
+    background-color: #FF735C;
+    font-family: 'Quicksand', sans-serif;
+    width: 218px;
+    height: 58px;
+    font-weight: bold !important;
+    border: none;
+    line-height: 58px;
+    margin: 1%;
+}
+
+.buttonHover:hover {
+    background-color: #fcb7ac;
+
+}
+
+.buttonContainer {
+    width: 99%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    text-align: center;
+    margin: 1%
+}
+
+.subtitleContainer {
+    width: 100%;
+}
+
+.subtitle {
+    text-align: center;
+    font-size: 2rem;
+    padding: 6%;
+
+}
+
+
+.footerRow {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    background-color: lightgrey;
+    justify-content: space-between;
+}
+
+
+.footerLogo {
+    font-family: 'Patua One', cursive;
+    font-size: 3rem;
+    line-height: 1;
+    padding-top: 2%;
+    padding-bottom: 5%;
+    padding-right: 2%;
+    padding-left: 5%;
+}
+
+.footerList {
+    text-align: end;
+    line-height: 40px;
+    padding-right: 3%;
+    font-size: 1.2rem;
+
+}
+
+.footerList li {
+    list-style-type: none;
+}
+
+.socialLogo {
+    height: 40px;
+}
+
+.heading {
+    height: 320px;
+}
+
+.banner {
+    width: 100%;
+    background-color: #FF735C;
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+}
+
+
+.pageHeading {
+    font-family: 'Patua One', cursive;
+    font-size: 3.6rem;
+    line-height: 57px;
+    text-align: right;
+    width: 25%;
+    display: inline-block;
+    padding-top: 3%;
+    padding-left: 1%;
+
+
+}
+
+
+.headingText {
+    font-size: 1.5rem;
+    width: auto;
+    text-align: left;
+    padding-left: 10%;
+    padding-top: 2%;
+    padding-right: 20%;
+
+
+}
+
+.aboutMeSection {
+    display: grid;
+    grid-template-columns: [first] 58% [line2] 42% [end];
+    grid-template-rows: auto auto;
+    grid-template-areas: "textDiv ImgKatie" "cvButton ImgKatie";
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-bottom: 5%;
+
+}
+
+.textDiv {
+    grid-area: textDiv;
+}
+
+.aboutMeParagraph {
+    font-size: 1.25rem;
+    text-align: left;
+
+}
+
+
+.cvButton {
+    grid-area: cvButton;
+    text-align: center;
+}
+
+.ImgKatie {
+    grid-area: ImgKatie;
+}
+
+.aboutMeImg {
+    object-fit: contain;
+    max-width: 80%;
+    max-height: 80vh;
+    border: 3px solid #FF735C;
+    border-radius: 15%;
+    margin-left: 10%;
+    margin-top: 5%
+}
+
+
+.skillsHeading {
+    text-align: center;
+    margin: auto;
+    padding-bottom: 5%;
+    padding-top: 5%;
+}
+
+.navbarContainer {
+    width: 40%;
+}
+
+
+.skillsFlex {
+    margin-left: 10%;
+    margin-right: 10%;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.pinkBackground {
+    max-height: 100%;
+    height: 100%;
+    width: 80%;
+    max-width: 80%;
+    background-color: #FFD5CE;
+    text-align: center;
+    border-radius: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
+
+}
+
+.skillsText {
+    padding: 0% 15% 0% 15%;
+    margin: 0%;
+}
+
+.pinkBackground h1 {
+    padding-top: 10%;
+    padding-bottom: 10%;
+    margin: 0%
+}
+
+.skillsContainer {
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
+
+
+.myTechnicalSkills {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto auto;
+    grid-template-areas: "tskillsHeading tskillsHeading tskillsHeading tskillsHeading tskillsHeading"
+        "tskillsContainer1 tskillsContainer2 tskillsContainer3 tskillsContainer4 tskillsContainer5";
+    grid-gap: 5%;
+    margin-bottom: 5%;
+}
+
+.tskillsHeading {
+    grid-area: tskillsHeading;
+    text-align: center;
+    margin: auto;
+    padding-bottom: 5%;
+    padding-top: 5%;
+}
+
+.pinkCircle {
+    width: 100%;
+    height: 100%;
+    background-color: #FFD5CE;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.skillsContainerCommon {
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    aspect-ratio: 1;
+    align-items: center;
+    align-content: center;
+    display: flex;
+}
+
+.tSkillsContainer1 {
+    grid-area: tskillsContainer1;
+
+}
+
+.tSkillsContainer2 {
+    grid-area: tskillsContainer2;
+}
+
+
+.tSkillsContainer3 {
+    grid-area: tskillsContainer3;
+}
+
+.tSkillsContainer4 {
+    grid-area: tskillsContainer4;
+}
+
+.tSkillsContainer5 {
+    grid-area: tskillsContainer5;
+}
+
+
+.tSkillsLogo {
+    object-fit: contain;
+    max-width: 50%;
+    max-height: 50%;
+}
+
+.invisionLogo {
+    border-radius: 20%;
+
+}
+
+.quoteMove {
+    transform: translate(0, 100vh);
+}
+
+.myWorkContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "gridArea1 gridArea2 gridArea3"
+        "gridArea4 gridArea5 gridArea6";
+    margin-left: 5%;
+    margin-right: 5%;
+
+}
+
+.myWork1 {
+    grid-area: gridArea1;
+    text-align: center;
+
+}
+
+.myWork2 {
+    grid-area: gridArea2;
+    text-align: center;
+
+}
+
+.myWork3 {
+    grid-area: gridArea3;
+    text-align: center;
+
+}
+
+.myWork4 {
+    grid-area: gridArea4;
+    text-align: center;
+
+}
+
+.myWork5 {
+    grid-area: gridArea5;
+    text-align: center;
+
+}
+
+.myWork6 {
+    grid-area: gridArea6;
+    text-align: center;
+
+}
+
+
+
+.flipCard {
+    background-color: transparent;
+    width: 100%;
+    height: 500px;
+    border-radius: 30%;
+    perspective: 1000px;
+
+}
+
+.flipCardInner {
+    position: relative;
+    height: 500px;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    display: flex;
+    justify-content: center;
+}
+
+
+.flipCard:hover .flipCardInner {
+    transform: rotateY(180deg);
+}
+
+.flipCardFront,
+.flipCardBack,
+.flipCardBackAlt {
+    position: absolute;
+    width: 100%;
+    height: 400px;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.flipCardBack {
+    background-color: #FFD5CE;
+    color: rgb(5, 5, 5);
+    transform: rotateY(180deg);
+    border-radius: 12%;
+    width: 353px;
+}
+
+.flipCardBackAlt {
+    background-color: #F0F0F0;
+    color: rgb(5, 5, 5);
+    transform: rotateY(180deg);
+    border-radius: 12%;
+    width: 353px;
+}
+
+.flipCardBack p,
+.flipCardBackAlt p {
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+.flipCardBack h1,
+.flipCardBackAlt h1 {
+    padding: 5%;
+}
+
+.workImg {
+    height: 400px;
+    object-fit: contain;
+
+}
+
+.buttonSeeMore {
+    border-radius: 30px;
+    border-color: #FF735C;
+    background-color: #FF735C;
+    font-family: 'Quicksand', sans-serif;
+    width: 200px;
+    height: 44px;
+    font-weight: bold !important;
+    border: none;
+    line-height: 44px;
+    display: block;
+    margin: 0 auto;
+}
+
+.arrow {
+    float: right;
+    position: relative;
+    top: 67vh;
+    margin: 2%;
+
+}
+
+.bounceMe {
+    height: 35px;
+    animation: bounceArrow .7s infinite;
+}
+
+.bottomRight {
+    display: none;
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+    font-size: 18px;
+}
+
+
+.turnButton {
+    font-size: 3rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 3px #ffffff;
+
+}
+
+.cardContainer {
+    height: 400px;
+    object-fit: contain;
+}
+
+@keyframes bounceArrow {
+    from {
+        margin-top: 0px;
+    }
+
+    50% {
+        margin-top: 7px;
+    }
+
+    to {
+        margin-top: 0px;
+    }
+}
+
+
+/* media queries */
+
+@media only screen and (max-width: 1200px) {
+
+    .myWorkContainer {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: "gridArea1 gridArea2 "
+            "gridArea3 gridArea4"
+            "gridArea5 gridArea6";
+        margin-left: 5%;
+        margin-right: 5%;
+
+    }
+
+    .buttonContainer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+
+@media only screen and (max-width: 1000px) {
+
+    .skillsFlex {
+        flex-direction: column;
+    }
+
+    .skillsContainer {
+        width: 100%;
+        padding-top: 15%;
+        margin: 0%;
+    }
+
+    .pinkBackground {
+        margin: auto;
+        padding-bottom: 5%;
+
+    }
+
+    .banner {
+        flex-direction: column;
+        height: 150px;
+    }
+
+    .pageHeading {
+        padding-left: 10%;
+    }
+
+    .aboutMeSection {
+        grid-template-columns: 100%;
+        grid-template-rows: auto auto auto;
+        grid-template-areas: "textDiv" "cvButton" "ImgKatie";
+    }
+
+    .headingText {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    .aboutMeParagraph {
+        padding-top: 15%;
+        margin: 0%;
+    }
+
+    .myTechnicalSkills {
+
+        grid-template-columns: auto auto auto auto auto;
+        grid-template-rows: auto auto auto;
+        grid-template-areas: "tskillsHeading tskillsHeading tskillsHeading tskillsHeading tskillsHeading"
+            "tskillsContainer1 . tskillsContainer3 . tskillsContainer4"
+            ". tskillsContainer2 . tskillsContainer5 . ";
+        grid-gap: 0;
+    }
+
+
+
+    .subtitle {
+        padding: 6%;
+    }
+
+    .footerList {
+        text-align: center;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .footerList ul {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+
+
+
+
+}
+
+@media only screen and (max-width: 600px) {
+    .navbarContainer {
+        width: 100%;
+    }
+
+    .navigation {
+        z-index: 20;
+        height: 70px;
+    }
+
+    .footerRow {
+        flex-direction: column;
+
+    }
+
+    .mainSection {
+        grid-template-columns: 100%;
+        grid-template-rows: 45vh 1fr 1fr 1fr;
+        grid-template-areas: "box" "quote" "text" "button";
+
+    }
+
+    .coralBox {
+        background-color: #FF735C;
+        height: 50vh;
+        width: 100%
+    }
+
+    .logoContainer {
+        position: relative;
+        top: 20vh;
+        text-align: right;
+    }
+
+    .quote {
+        align-items: center;
+        justify-content: center;
+        padding-top: 1%;
+        padding-bottom: 10%;
+    }
+
+    .aboutMe {
+        padding-bottom: 5%;
+    }
+
+    .homepageSection {
+        height: auto;
+    }
+
+    .myWorkContainer {
+        grid-template-columns: 100%;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas: "gridArea1"
+            "gridArea2"
+            "gridArea3"
+            "gridArea4"
+            "gridArea5"
+            "gridArea6";
+        margin-left: 5%;
+        margin-right: 5%;
+
+    }
+
+    .arrow {
+        display: none;
+    }
+
+    .bottomRight {
+        display: block;
+    }
+
+    .container {
+        padding: 10%;
+    }
+
+
+}
+
+/* case study */
+
+
+.tabNav {
+    width: 100%;
+    position: fixed;
+    background-color: white;
+    z-index: 100000;
+
+
+}
+
+.greenHeader {
+    background-color: #5BAA1E;
+    margin-top: 5%;
+
+}
+
+
+.center {
+    text-align: center;
+    color: white;
+}
+
+.intro {
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 10%;
+}
+
+.ghIntroPics {
+    Height: 400px;
+
+
+}
+
+.ghButton {
+    background-color: #5BAA1E;
+    border-color: #5BAA1E;
+    text-align: center;
+    border-radius: 10px;
+
+}
+
+.ghButton:hover {
+    background-color: #2d6601;
+    border-color: #2d6601;
+    text-align: center;
+
+}
+
+.problemHeading {
+    font-size: 2rem;
+}
+
+.researchIntro {
+    margin-top: 2%;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.researchContainer {
+    background-color: #D9EAD3;
+    border-radius: 20px;
+    text-align: center;
+    margin: 10%;
+    padding: 10%;
+
+}
+
+.nav-link:hover {
+    color: #60c512 !important;
+
+}
+
+.orange {
+    background-color: #F9C679;
+}
+
+.small {
+    margin: 3%;
+}
+
+.empathyMap {
+    width: 70%;
+    max-width: 70%;
+
+}
+
+.empathyMapContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+.space {
+    height: 50px;
+}
+
+.spaceBig {
+    height: 25vh;
+
+}
+
+.wireframes {
+    width: 100%;
+    max-width: 100%;
+}
+
+.nav-right {
+    text-align: right;
+}

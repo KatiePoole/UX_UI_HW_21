@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8 ">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Katie Poole</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Patua+One&family=Quicksand:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+</head>
+
+<body>
+
+    <header class="navigation">
+        <nav class="inlineBlock w40 flexEnd">
+            <ul class="navbarList flexEnd">
+                <li class="inlineBlock"><a href="index.html">Home</a></li>
+                <li class="inlineBlock"><a href="mywork.html" class="inuse">My Work</li>
+                <li class="inlineBlock"><a href="aboutme.html">About Me</a></li>
+                <li class="inlineBlock">Contact</li>
+            </ul>
+        </nav>
+
+
+    </header>
+
+    <!-- navigation using nav component -->
+
+    <ul class="nav nav-tabs tabNav" id="myTab" role="tablist">
+        <li class="nav-item">
+            <a class="nav-link active" id="intro-tab" data-toggle="tab" href="#intro" role="tab" aria-controls="intro"
+                aria-selected="true">Introduction</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="research-tab" data-toggle="tab" href="#research" role="tab" aria-controls="research"
+                aria-selected="false">Research</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="problem-tab" data-toggle="tab" href="#problem" role="tab" aria-controls="problem"
+                aria-selected="false">Problem Statement</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="design-tab" data-toggle="tab" href="#design" role="tab" aria-controls="design"
+                aria-selected="false">Design and interations</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="prototype-tab" data-toggle="tab" href="#prototype" role="tab"
+                aria-controls="prototype" aria-selected="false">Prototype</a>
+        </li>
+    </ul>
+
+    <!-- Introduction to the business using junbotron component and Bootstrap 4 col system-->
+    <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="intro" role="tabpanel" aria-labelledby="intro-tab">
+            <div class="jumbotron jumbotron-fluid greenHeader">
+                <div class="container">
+                    <h1 class="display-4 center">Greyhound Trust <br>Website Redesign</h1>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="intro">
+                            <h2>The Problem:</h2>
+                            <p>The ‘Greyhound Trust for Merseyside and Cheshire’ site lacks high quality pictures
+                                and
+                                sufficient
+                                information, making it difficult to understand the adoption process and find the
+                                right
+                                Greyhound.
+                            </p>
+                            <img src="Images\Group 17.png" class="ghIntroPics">
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="intro">
+                            <h2>The Solution:</h2>
+                            <p>A modern, trustworthy website with a high-quality design that provides concise and
+                                factual
+                                information, a simple adoption process and effective contact with the charity.
+                            </p><br>
+                            <img src="Images\Group 16.png" class="ghIntroPics">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="row space">
+                </div>
+
+                <div class="nav" id="myTab" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link" id="research-tab" data-toggle="tab" href="#research"  role="tab"
+                            aria-controls="research" aria-selected="false">Research &#x2192;</a>
+                    </li>
+                </div>
+
+
+                <div class="row">
+                    <div class="col">
+                        <div class="buttonContainer">
+                            <a href="Documents\Portfolio Wireframes - desktop.pdf" target="_blank"
+                                rel="noopener noreferrer" class="btn btn-primary ghButton">Download Full Case Study
+                                &#x2192;</a>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="row space">
+
+                </div>
+
+
+            </div>
+        </div>
+
+        <!-- Research using junbotron component and Bootstrap 4 col system-->
+
+        <div class="tab-pane fade" id="research" role="tabpanel" aria-labelledby="research-tab">
+
+            <div class="jumbotron jumbotron-fluid greenHeader">
+                <div class="container">
+                    <h1 class="display-4 center problemHeading">Understanding the Problem</h1>
+                </div>
+            </div>
+
+
+            <div class="container">
+                <div class="row">
+                    <p>To find out the problems users were having wth the current website we conducted
+                        in-depth research and a
+                        comprehensive heuristic evaluation</p>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="researchContainer">
+                            <h2>6</h2>
+                            <p>Usability tests</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="researchContainer">
+                            <h2>47</h2>
+                            <p>Survey Respondents</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="researchContainer">
+                            <h2>6</h2>
+                            <p>Competitor sites analysed</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <h2>Research Findings</h2>
+                    <p><br>We analysed the results using an affinity diagram and categorised the responses. The main
+                        issues
+                        that were highlighted were people did not like the design and layout, they thought the design
+                        looked outdated and they felt the placement of images and information were wrong. This led the
+                        users to not trust the website</p>
+
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="researchContainer orange">
+                            <h2>98%</h2>
+                            <p>
+                                of respondents thought it was important for the website to provide <strong>comprehensive
+                                    information</strong> about greyhound characteristics, behaviour, and specific care
+                                needs.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="researchContainer orange">
+                            <h2>94%</h2>
+                            <p>of respondents thought seeing the registered charity number was essential to make the
+                                website look trustworthy</p>
+                            <br><br>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="researchContainer orange small">
+                            <h5>I don't like the low quality pictures.<br><br></h5>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="researchContainer small">
+                            <h5>The website looks so old and outdated it looks like they’re not around.</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="researchContainer small">
+                            <h5>I don’t understand some of the writing e.g. “the lucky ones”.</h5>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="researchContainer orange small">
+                            <h5>Layout doesn’t look trustworthy. I would not donate.</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <p><br><br>To help us empathise with our users and understand their problems in more depth we
+                        collated our research findings into a user persona and empathy map.</p>
+
+                    <div class="empathyMapContainer">
+
+                        <img src="Images\Empathy Map GH.png" class="empathyMap">
+
+                    </div>
+                </div>
+
+                <div class="row space">
+                </div>
+
+                <div class="nav" id="myTab" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link" id="problem-tab" data-toggle="tab" href="#problem" role="tab"
+                            aria-controls="problem" aria-selected="false">Problem Statement &#x2192;</a>
+                    </li>
+                </div>
+
+
+
+                <div class="row space">
+
+                </div>
+
+
+
+            </div>
+        </div>
+
+        <!-- Problem Statement using junbotron component and Bootstrap 4 col system-->
+
+        <div class="tab-pane fade" id="problem" role="tabpanel" aria-labelledby="problem-tab">
+
+            <div class="jumbotron jumbotron-fluid greenHeader">
+                <div class="container">
+                    <h1 class="display-4 center problemHeading">Problem Statement</h1>
+
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="row">
+                    <h5>
+                        Research found the website contained <strong> low quality images,</strong> an
+                        <strong>inconsistent colour scheme</strong> and a <strong>lack of standard website
+                        </strong>navigation <strong>header and footer</strong> features. This led users to <strong>lose
+                            trust </strong>in the website, which resulted in the <strong>charity losing
+                            sponsors.</strong> Users are seeking a <strong>trustworthy website </strong>with a
+                        <strong>high-quality design</strong> that provides <strong>concise and factual</strong>
+                        information, a <strong>simple adoption process</strong> and effective contact with the charity.
+                    </h5>
+                </div>
+
+                <div class="row space">
+                </div>
+
+
+                <div class="nav" id="myTab" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link" id="design-tab" data-toggle="tab" href="#design" role="tab"
+                            aria-controls="design" aria-selected="false">Design and interations &#x2192;</a>
+                    </li>
+                </div>
+
+                <div class="row spaceBig">
+
+                </div>
+
+            </div>
+
+
+
+        </div>
+
+
+        <!-- Iteration section using junbotron component and Bootstrap 4 col system-->
+
+
+        <div class="tab-pane fade" id="design" role="tabpanel" aria-labelledby="design-tab">
+            <div class="jumbotron jumbotron-fluid greenHeader">
+                <div class="container">
+                    <h1 class="display-4 center problemHeading problemHeadingMobile">Design and Iterations</h1>
+
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="row">
+                    <p>We brainstormed using the I like, I wish, What if method and then prioritised using a feature
+                        prioritisation method. We focussed on features that were a high priority for users and a high
+                        priority for the charity.
+
+                        <br><br> With the features that were selected for development we created a user journey map, a
+                        storyboard
+                        and user flows to map out the new user experience. We also redesigned the navigation and created
+                        a new sitemap.
+
+                        <br><br>We created a mood board for inspiration and then sketched ideas for the website
+                        redesign. We created low-fidelity prototypes in Figma ensuring the design was responsive.
+                    </p>
+                </div>
+
+
+                <div class="row">
+                    <div class="empathyMapContainer">
+                        <img src="Images\GH Wireframes.png" class="wireframes">
+                    </div>
+
+                </div>
+
+
+                <div class="row">
+                    <p> Using Maze we completed testing on the low-fidelity prototypes and continually through the
+                        design of the high-fidelity prototypes using Guerrilla testing methods, 5 second tests and A/B
+                        Tests. This ensured the high-fidelity design was user-led. <br><br>
+
+                        We categorised responses from guerrilla tests and five second tests by collating the most common
+                        responses.
+
+                    </p>
+                    <div class="empathyMapContainer">
+                        <img src="Images\Testing.png" class="wireframes">
+                    </div>
+
+                </div>
+
+                <div class="row space">
+                </div>
+
+                <div class="nav" id="myTab" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link" id="prototype-tab" data-toggle="tab" href="#prototype" role="tab"
+                            aria-controls="prototype" aria-selected="false">Prototype &#x2192;</a>
+                    </li>
+                </div>
+
+                <div class="row space">
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Prototype using junbotron component and Bootstrap 4 col system-->
+
+        <div class="tab-pane fade" id="prototype" role="tabpanel" aria-labelledby="prototype-tab">
+
+            <div class="jumbotron jumbotron-fluid greenHeader">
+                <div class="container">
+                    <h1 class="display-4 center problemHeading">Prototype</h1>
+
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="row">
+                    <div class="empathyMapContainer">
+                        <img src="Images\GH prototype.png" class="wireframes">
+                    </div>
+
+                </div>
+
+                <div class="row">
+                    <div class="col">
+                        <div class="buttonContainer">
+                            <a href="Documents\Portfolio Wireframes - desktop.pdf" target="_blank"
+                                rel="noopener noreferrer" class="btn btn-primary ghButton">Download Full Case Study
+                                &#x2192;</a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="row space">
+
+            </div>
+
+        </div>
+
+    </div>
+    </div>
+
+
+
+    <footer class="footerRow">
+        <div class="footerLogo">
+            Katie
+            <br>
+            Poole
+        </div>
+        <div class="footerList">
+            <ul>
+                <li>klpoole21@gmail.com</li>
+                <li><img src="Images\iconmonstr-behance-3.svg" class="" alt="LinkedIn Logo"> <img
+                        src="Images\iconmonstr-linkedin-3.svg" class="" alt="Behance logo"></li>
+                <li>www.katiepoole.co.uk © 2023</li>
+            </ul>
+        </div>
+    </footer>
+
+
+
+
+
+
+</body>
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+<script src="js/index.js"></script>
+</body>
+
+</html>
